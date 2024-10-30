@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "LCCN Discuss Blocker",
+    "version": "1.0",
+    "description": "Block LCCN discussion board.",
+    "permissions": [
+        "activeTab",
+        "webRequest",
+        "webRequestBlocking",
+        "<all_urls>"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["*://leetcode.cn/*"],
+            "js": ["content.js"],
+            "run_at": "document_end"
+        }
+    ]
+}
