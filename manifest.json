@@ -3,6 +3,11 @@
     "name": "LCCN Discuss Blocker",
     "version": "1.0",
     "description": "Block LCCN discussion board.",
+    "applications": {
+        "gecko": {
+            "id": "lccn-discuss-blocker@eleven-dimension"
+        }
+    },
     "permissions": [
         "activeTab",
         "webRequest",
